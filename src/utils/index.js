@@ -21,7 +21,7 @@ const fonts = fs_1.default.readdirSync('assets/fonts');
 for (const font of fonts) {
     (0, canvas_1.registerFont)(`./assets/fonts/${font}`, { family: font.split('.')[0] });
 }
-const adkarAPIMorning = [
+const adkarAPI = [
     {
         color: 'black',
         timeOfDay: 'morning',
