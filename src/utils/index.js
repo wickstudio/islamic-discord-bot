@@ -21,24 +21,168 @@ const fonts = fs_1.default.readdirSync('assets/fonts');
 for (const font of fonts) {
     (0, canvas_1.registerFont)(`./assets/fonts/${font}`, { family: font.split('.')[0] });
 }
-const adkarAPI = [
+const adkarAPIMorning = [
     {
         color: 'black',
         timeOfDay: 'morning',
         url: 'https://api.islamicadkar.xyz/api/adkar/morning',
-        time: '0 6 * * *',
+        schedule: '0 6 * * *', // 6 AM
+    },
+    {
+        color: 'black',
+        timeOfDay: 'morning',
+        url: 'https://api.islamicadkar.xyz/api/adkar/morning',
+        schedule: '0 7 * * *', // 7 AM
+    },
+    {
+        color: 'black',
+        timeOfDay: 'morning',
+        url: 'https://api.islamicadkar.xyz/api/adkar/morning',
+        schedule: '0 8 * * *', // 8 AM
+    },
+    {
+        color: 'black',
+        timeOfDay: 'morning',
+        url: 'https://api.islamicadkar.xyz/api/adkar/morning',
+        schedule: '0 9 * * *', // 9 AM
+    },
+    {
+        color: 'black',
+        timeOfDay: 'morning',
+        url: 'https://api.islamicadkar.xyz/api/adkar/morning',
+        schedule: '0 10 * * *', // 10 AM
+    },
+    {
+        color: 'black',
+        timeOfDay: 'morning',
+        url: 'https://api.islamicadkar.xyz/api/adkar/morning',
+        schedule: '0 11 * * *', // 11 AM
+    },
+    {
+        color: 'black',
+        timeOfDay: 'morning',
+        url: 'https://api.islamicadkar.xyz/api/adkar/morning',
+        schedule: '0 12 * * *', // 12 PM
+    },
+    {
+        color: 'black',
+        timeOfDay: 'morning',
+        url: 'https://api.islamicadkar.xyz/api/adkar/morning',
+        schedule: '0 13 * * *', // 1 PM
+    },
+    {
+        color: 'black',
+        timeOfDay: 'morning',
+        url: 'https://api.islamicadkar.xyz/api/adkar/morning',
+        schedule: '0 14 * * *', // 2 PM
+    },
+    {
+        color: 'black',
+        timeOfDay: 'morning',
+        url: 'https://api.islamicadkar.xyz/api/adkar/morning',
+        schedule: '0 15 * * *', // 3 PM
+    },
+    {
+        color: 'black',
+        timeOfDay: 'morning',
+        url: 'https://api.islamicadkar.xyz/api/adkar/morning',
+        schedule: '0 16 * * *', // 4 PM
+    },
+    {
+        color: 'black',
+        timeOfDay: 'morning',
+        url: 'https://api.islamicadkar.xyz/api/adkar/morning',
+        schedule: '0 17 * * *', // 5 PM
+    },
+    {
+        color: 'black',
+        timeOfDay: 'morning',
+        url: 'https://api.islamicadkar.xyz/api/adkar/morning',
+        schedule: '0 18 * * *', // 6 PM
     },
     {
         color: 'black',
         timeOfDay: 'evening',
         url: 'https://api.islamicadkar.xyz/api/adkar/evening',
-        time: '0 18 * * *',
+        schedule: '0 18 * * *', // 6 PM
+    },
+    {
+        color: 'black',
+        timeOfDay: 'evening',
+        url: 'https://api.islamicadkar.xyz/api/adkar/evening',
+        schedule: '0 19 * * *', // 7 PM
+    },
+    {
+        color: 'black',
+        timeOfDay: 'evening',
+        url: 'https://api.islamicadkar.xyz/api/adkar/evening',
+        schedule: '0 20 * * *', // 8 PM
+    },
+    {
+        color: 'black',
+        timeOfDay: 'evening',
+        url: 'https://api.islamicadkar.xyz/api/adkar/evening',
+        schedule: '0 21 * * *', // 9 PM
     },
     {
         color: 'white',
         timeOfDay: 'night',
         url: 'https://api.islamicadkar.xyz/api/adkar/night',
-        time: '0 21 * * *',
+        schedule: '0 21 * * *', // 9 PM
+    },
+    {
+        color: 'white',
+        timeOfDay: 'night',
+        url: 'https://api.islamicadkar.xyz/api/adkar/night',
+        schedule: '0 22 * * *', // 10 PM
+    },
+    {
+        color: 'white',
+        timeOfDay: 'night',
+        url: 'https://api.islamicadkar.xyz/api/adkar/night',
+        schedule: '0 23 * * *', // 11 PM
+    },
+    {
+        color: 'white',
+        timeOfDay: 'night',
+        url: 'https://api.islamicadkar.xyz/api/adkar/night',
+        schedule: '0 0 * * *', // 12 AM
+    },
+    {
+        color: 'white',
+        timeOfDay: 'night',
+        url: 'https://api.islamicadkar.xyz/api/adkar/night',
+        schedule: '0 1 * * *', // 1 AM
+    },
+    {
+        color: 'white',
+        timeOfDay: 'night',
+        url: 'https://api.islamicadkar.xyz/api/adkar/night',
+        schedule: '0 2 * * *', // 2 AM
+    },
+    {
+        color: 'white',
+        timeOfDay: 'night',
+        url: 'https://api.islamicadkar.xyz/api/adkar/night',
+        schedule: '0 3 * * *', // 3 AM
+    },
+    {
+        color: 'white',
+        timeOfDay: 'night',
+        url: 'https://api.islamicadkar.xyz/api/adkar/night',
+        schedule: '0 4 * * *', // 4 AM
+    },
+    {
+        color: 'white',
+        timeOfDay: 'night',
+        url: 'https://api.islamicadkar.xyz/api/adkar/night',
+        schedule: '0 5 * * *', // 5 AM
+    },
+    {
+        color: 'white',
+        timeOfDay: 'night',
+        url: 'https://api.islamicadkar.xyz/api/adkar/night',
+        schedule: '0 6 * * *', // 6 AM
     },
 ];
 exports.adkarAPI = adkarAPI;
