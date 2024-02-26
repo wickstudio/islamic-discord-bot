@@ -63,7 +63,6 @@ client.once('ready', () => __awaiter(void 0, void 0, void 0, function* () {
         }
     }
     yield rest.put(discord_js_1.Routes.applicationCommands(client.user.id), { body: commands });
-    yield rest.put(discord_js_1.Routes.applicationGuildCommands(client.user.id, '1179553732497784903'), { body: commands });
     console.log(`Bot is online! ${(_a = client.user) === null || _a === void 0 ? void 0 : _a.username}`);
     console.log('Code by Wick Studio');
     console.log('discord.gg/wicks');
